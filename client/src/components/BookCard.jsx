@@ -22,10 +22,12 @@ function BookCard(props) {
 
       return (
     <section className='book-card'>
-        <h2>{ title }</h2>
-        <h4>{ author }</h4>
-            <button id={title} onClick={ handleDeleteBook }>X</button>
+        <h2>Title:</h2>
+        <p>{title}</p>
+        <h2>Author:</h2>
+        <p>{ author }</p>
             <button id={title} onClick={ handlePush }>Details</button>
+            <button id={title} onClick={ handleDeleteBook }>Delete</button>
     </section>
   )
 }

@@ -1,0 +1,45 @@
+.book-form {
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    background-color: rgb(254, 225, 135, 1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 20%;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.book-form > input {
+    border: 1px solid rgba(0, 0, 0, 0.225);
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.book-form > textarea {
+    border: 1px solid rgba(0, 0, 0, 0.225);
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.book-form > button {
+    border: 1px solid rgba(0, 0, 0, 0.225);
+    background-color: rgba(236, 168, 58, 0.575);
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+    color: rgb(115, 107, 81, 1);
+
+}
+
+.form-div > p {
+    margin-bottom: -35px;
+    color: rgb(115, 107, 81, 1);
+}
+
+.details-title {
+    color: rgb(115, 107, 81, 1);
+}

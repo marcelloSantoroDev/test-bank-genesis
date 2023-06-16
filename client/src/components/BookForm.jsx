@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import AppContext from '../context/AppContext';
+import './css/BookForm.css'
 
 function BookForm() {
   const { bookList, setBookList } = useContext(AppContext);
@@ -23,13 +24,18 @@ function BookForm() {
     const { title, author, description } = book;
     const newBook = { title, author, description };
     setBookList([...bookList, newBook])
+    setBook({
+      title: '',
+      author: '',
+      description: '',
+    })
   }
 
   return (
-    <section className="book-form" >
+    <section className='form-div'>
       <p>Insert your books below:</p>
 
-    <form>
+      <form className="book-form" >
       <input
       value={book.title}
       name="title"
@@ -46,7 +52,7 @@ function BookForm() {
       onChange={handleChange}
       />
 
-      <input
+      <textarea
       value={book.description}
       name="description" 
       type="text"
