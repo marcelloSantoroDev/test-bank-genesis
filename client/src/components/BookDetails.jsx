@@ -25,7 +25,7 @@ function BookDetails() {
     </section>
     <br />
     <br />
-    <Link className="return-link" to="/" >Return</Link>
+    <Link className="return-link" to="/" >Home</Link>
     </>
   )
 }
