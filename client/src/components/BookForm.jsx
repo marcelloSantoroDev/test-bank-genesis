@@ -23,7 +23,6 @@ function BookForm() {
     const { title, author, description } = book;
     const newBook = { title, author, description };
     setBookList([...bookList, newBook])
-
   }
 
   return (

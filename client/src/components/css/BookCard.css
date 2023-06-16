@@ -1,0 +1,24 @@
+.book-card {
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.book-card > h2 {
+    text-align: center;
+}
+
+.book-card > h4 {
+    text-align: center;
+}
+
+.book-card > p {
+    text-align: center;
+}
+
+
+.book-card > button {
+    display: flex;
+    margin: auto;
+}

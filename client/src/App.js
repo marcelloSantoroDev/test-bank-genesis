@@ -2,6 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import BookList from './components/BookList';
 import BookDetails from './components/BookDetails';
 import Header from './components/Header';
+import './App.css'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
     <Header />
     <Switch>
       <Route exact path="/" component={ BookList } />
-      <Route exact path="/details" component={ BookDetails } />
+      <Route exact path="/details/:id" component={ BookDetails } />
     </Switch>
     </section>
 
