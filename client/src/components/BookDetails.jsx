@@ -4,18 +4,20 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function BookDetails() {
-  const { bookList } = useContext(AppContext)
+  const { bookList } = useContext(AppContext);
   const { id } = useParams();
 
-  const splitTitle = id.split("-")
+  // abaixo, transformando o parâmetro id no texto original
+  const splitTitle = id.split("-");
   const originalTitle = splitTitle.map(word => word.slice(0)).join(" ");
   const bookToRender = bookList.find((book) => book.title.toLowerCase() === originalTitle);
-  const { title, author, description } = bookToRender
+
+  const { title, author, description } = bookToRender;
 
   return (
     <>
-    <span className='details-title'>{`${title}'s details:`}</span>
-    <section className='book-card'>
+    <span className="details-title">{`${title}'s details:`}</span>
+    <section className="book-card">
         <h2>Title:</h2>
         <p>{title}</p>
         <h2>Author:</h2>

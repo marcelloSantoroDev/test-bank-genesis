@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import AppContext from './AppContext';
 
 function AppProvider ({ children }){
-    const [bookList, setBookList] = useState([])
+    const [bookList, setBookList] = useState([]);
 
     const values = useMemo(() => ({
         bookList,

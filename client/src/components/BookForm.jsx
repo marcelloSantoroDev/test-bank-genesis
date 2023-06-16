@@ -9,7 +9,7 @@ function BookForm() {
     title: '',
     author: '',
     description: '',
-  })
+  });
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -17,18 +17,18 @@ function BookForm() {
     setBook({
       ...book,
       [name]: value
-    })
+    });
   }
 
   const handleClick = () => {
     const { title, author, description } = book;
     const newBook = { title, author, description };
-    setBookList([...bookList, newBook])
+    setBookList([...bookList, newBook]);
     setBook({
       title: '',
       author: '',
       description: '',
-    })
+    });
   }
 
   return (
