@@ -11,7 +11,9 @@ Para instalar e executar este aplicativo em sua máquina local, siga estas etapa
 ```bash
 git clone git@github.com:marcelloSantoroDev/test-bank-genesis.git
 ```
-2. Navegue até o diretório em seu terminal
+2. Navegue até o diretório em seu terminal 
+
+3. Entre no diretório `client`
 
 3. Execute `npm install`
 ```bash
