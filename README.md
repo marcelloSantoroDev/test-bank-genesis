@@ -1,7 +1,7 @@
 # My Book List
 
 
-Uma implementação baseada em React,js para a criação de uma lista de livros, sendo possível sua inserção, deleção, bem como redirecionamento para uma página de detalhes.
+Uma implementação baseada em React.js para a criação de uma lista de livros, sendo possível sua inserção, deleção, bem como redirecionamento para uma página de detalhes.
 
 ## Instalação
 
